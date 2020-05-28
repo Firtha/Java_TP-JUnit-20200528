@@ -14,10 +14,11 @@ public class SommeArgentTest {
 		SommeArgent equalObject = new SommeArgent(420, "GreenTokens");
 		SommeArgent diffObject = new SommeArgent(024, "TokensGreen");
 		
-		if Assert.assertTrue(testObject.equals(equalObject)){
-			System.out.println("Test and equal object are equals");
-		}
-		fail("Not yet implemented");
+		// Success expected
+		Assert.assertTrue(testObject.equals(equalObject));
+		Assert.assertFalse(testObject.equals(diffObject));
+		
+		// Failures expected
+		Assert.assertTrue(testObject.equals(equalObject));
 	}
-
 }
