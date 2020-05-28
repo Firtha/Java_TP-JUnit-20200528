@@ -1,11 +1,8 @@
 package junit.monprojet.test;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 
 import junit.monprojet.SommeArgent;
@@ -26,7 +23,7 @@ public class SommeArgentTest {
 	}
 	
 	@Test
-	public void testCreatedSommeArgent() throws UniteDistincteException {
+	public void testCreatedSommeArgent() {
 		// Success expected
 		Assert.assertEquals(objectA, objectD);
 		Assert.assertTrue(objectA.equals(objectD));

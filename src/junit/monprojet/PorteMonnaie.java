@@ -13,7 +13,7 @@ public class PorteMonnaie {
 		contenu = new HashMap<String, Integer>();
 	}
 	
-	public void ajoueSomme(SommeArgent sa) {
+	public void ajouteSomme(SommeArgent sa) {
 		String key = sa.getUnite();
 		Integer value = sa.getQuantite();
 		
