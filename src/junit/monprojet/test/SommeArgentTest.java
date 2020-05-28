@@ -41,11 +41,8 @@ public class SommeArgentTest {
 	public void divisionWithException() throws UniteDistincteException {  
 		SommeArgent firstValue = new SommeArgent(777, "EUR");
 		SommeArgent secondValue = new SommeArgent(333, "USD");
-		SommeArgent resultedValue = new SommeArgent(1000, "EUR");
 		
 		firstValue.add(secondValue);
-		
-		System.out.println("Last tests OK");
 	}
 	
 	

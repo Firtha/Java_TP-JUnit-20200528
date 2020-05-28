@@ -39,4 +39,10 @@ public class SommeArgent {
 		}
 		return false;
 	}
+	
+	public String toString() {
+		String message = "SommeArgent -> Currency : " + getUnite() + ", Amount : " + getQuantite();
+		
+		return message;
+	}
 }
