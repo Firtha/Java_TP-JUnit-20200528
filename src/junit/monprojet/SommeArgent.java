@@ -17,8 +17,12 @@ public class SommeArgent {
 		return unite;
 	}
 	
-	public SommeArgent add(SommeArgent m) {
-		return new SommeArgent(getQuantite() + m.getQuantite(), getUnite());
+	public SommeArgent add(SommeArgent m) throws UniteDistincteException {
+		if(!this.equals(m)) {
+			throw new UniteDistincteException(this, m);
+		}else {
+			return new SommeArgent(getQuantite() + m.getQuantite(), getUnite());
+		}
 	}
 	
 	@Override
